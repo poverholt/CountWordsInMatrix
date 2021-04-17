@@ -4,6 +4,23 @@ Takes a matrix of characters and a word, and returns the number of
 times that word appears in the matrix. The word may appear left-to-right,
 right-to-left, top-to-bottom, or bottom-to-top.
 
+### Example
+* A O T D L R O W   
+* L C B M U M L U   
+* D R U J D B L J   
+* P A Z H Z Z E F   
+* B C Z E L F H W   
+* R K U L V P P G   
+* A L B L P O P Q   
+* B E M O P P J Y
+
+### Clojure Test Cases
+* (is (= 2 (count-words-in-matrix mat &quot;HELLO&quot;)))
+* (is (= 1 (count-words-in-matrix mat &quot;WORLD&quot;)))
+* (is (= 2 (count-words-in-matrix mat &quot;BUZZ&quot;)))
+* (is (= 0 (count-words-in-matrix mat &quot;CLOJURE&quot;)))
+* (is (= 0 (count-words-in-matrix mat &quot;COWABUNGA&quot;)))
+
 ## Usage
 
 Using "lein run" will run the test cases.
